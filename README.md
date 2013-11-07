@@ -23,3 +23,7 @@ require_once __DIR__.'/../_data/YiiBridge/yiit.php';
 ### Important Notes
 
 This bridge is far from complete. It might not suit your project as well. So any contributions are welcome. If you feel like you need to customize any of provided classes - please do that. 
+
+### Credits
+
+Initial version created by **Ragazzo**.
