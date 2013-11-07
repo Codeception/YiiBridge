@@ -11,6 +11,11 @@ Yii1 framework was not designed for functional testing. This bridge classes incl
 
 * Install [Codeception](http://codeception.com/install) and set up [Yii1](http://codeception.com/docs/modules/Yii1) module. 
 * Clone this repository into `tests/_data` directory.
+
+```
+git clone git@github.com:Codeception/YiiBridge.git tests/_data/YiiBridge
+```
+
 * include `yiit.php` file in your `tests/functional/_bootstrap.php`:
 
 ``` php
