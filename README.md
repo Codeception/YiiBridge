@@ -26,4 +26,4 @@ This bridge is far from complete. It might not suit your project as well. So any
 
 ### Credits
 
-Initial version created by **Ragazzo**.
+Initial version created by [**Ragazzo**](https://github.com/Ragazzo).
