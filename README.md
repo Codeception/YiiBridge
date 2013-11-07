@@ -1,7 +1,8 @@
 Codeception <=> Yii Bridge
 =========
 
-Wrapper classes required to run Yii functional tests with Codeception
+Wrapper classes required to run Yii functional tests with Codeception.
+Does not provide a smooth integration (yet). For now use for your own pain and risk.
 
 ### Concept
 
@@ -28,6 +29,13 @@ require_once __DIR__.'/../_data/YiiBridge/yiit.php';
 ### Important Notes
 
 This bridge is far from complete. It might not suit your project as well. So any contributions are welcome. If you feel like you need to customize any of provided classes - please do that. 
+
+### Known Issues and Roadmap
+
+* Sessions -> triggers php error
+* Forwards -> triggers php error
+* Http Codes
+* WebApplication->end -> triggers `exit` directive
 
 ### Credits
 
