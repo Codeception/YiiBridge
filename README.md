@@ -1,33 +1,25 @@
-YiiPlugin
+Codeception <=> Yii Bridge
 =========
 
 Wrapper classes required to run Yii functional tests with Codeception
 
-For running tests you will need `CodeceptionHttpRequest` component from `web` directory, this component will be
- imported when you include Yii1 module. There is also an alias "codeceptionsrc" available in Yii that points to the  codeception source directory, you can use it as always:
+### Concept
 
- ```
- Yii::getPathOfAlias('codeceptionsrc');
- ```
+Yii1 framework was not designed for functional testing. This bridge classes include components that override standart Yii components to be testable. The most common issues with Yii functional tests are usage `headers`, `cookies` functions in PHP code, which produce errors on testing. Also usage of `exit` directive might even stop test execution completely. 
 
- This component extends yii CHttpRequest and handles headers() and cookie correctly. Also you can
- modify it to be extended from your custom http-request component.
- 
- You can test this module by creating new empty Yii application and creating this scenario:
+### Install
+
+* Install [Codeception](http://codeception.com/install) and set up [Yii1](http://codeception.com/docs/modules/Yii1) module. 
+* Clone this repository into `tests/_data` directory.
+* include `yiit.php` file in your `tests/functional/_bootstrap.php`:
 
 ``` php
-<?php 
- $I = new TestGuy($scenario);
- $I->wantTo('Test index page');
- $I->amOnPage('/index.php');
- $I->see('My Web Application','#header #logo');
- $I->click('Login');
- $I->see('Login','h1');
- $I->see('Username');
- $I->fillField('#LoginForm_username','demo');
- $I->fillField('#LoginForm_password','demo');
- $I->click('#login-form input[type="submit"]');
- $I->seeLink('Logout (demo)');
- $I->click('Logout (demo)');
- $I->seeLink('Login');
+require_once __DIR__.'/../_data/YiiBridge/yiit.php';
+
 ```
+
+* Done!
+
+### Important Notes
+
+This bridge is far from complete. It might not suit your project as well. So any contributions are welcome. If you feel like you need to customize any of provided classes - please do that. 
