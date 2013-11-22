@@ -17,7 +17,7 @@ Yii1 framework was not designed for functional testing. This bridge classes incl
 git clone git@github.com:Codeception/YiiBridge.git tests/_data/YiiBridge
 ```
 
-* include `yiit.php` file in your `tests/functional/_bootstrap.php`:
+* include `yiit.php` file in your `tests/_bootstrap.php`:
 
 ``` php
 require_once __DIR__.'/../_data/YiiBridge/yiit.php';
