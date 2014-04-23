@@ -79,11 +79,6 @@ php composer.phar require "codeception/YiiBridge:*"
 php composer.phar update
 ```
 
-* Include composer's autoload file in your ```tests/_bootstrap.php``` file.
-```
-    require_once '/path/to/vendor/composer/autoload.php';
-```
-
 * Modify your ```protected/config/test.php``` configuration file to use the ```CodeceptionHttpRequest``` class instead of ```CHttpRequest```
 
 ```php
