@@ -1,0 +1,7 @@
+{
+    "name": "codeception/YiiBridge",
+    "description": "YiiBridge extension",
+    "license": "MIT",
+    "type": "package",
+    "minimum-stability": "dev"
+}
