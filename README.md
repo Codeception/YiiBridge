@@ -39,6 +39,7 @@ $config = require __DIR__.DS.'protected'.DS.'config'.DS.'test.php';
 // Load Yii and Composer extensions
 require_once __DIR__.DS.'vendor'.DS.'yiisoft'.DS.'yii'.DS.'framework'.DS.'yii.php';
 require_once __DIR__.DS.'vendor'.DS.'autoload.php';
+require_once __DIR__.DS.'vendor'.DS.'codeception'.DS.'YiiBridge'.DS.'yiit.php';
 
 // Return for Codeception
 return array(
