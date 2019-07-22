@@ -98,7 +98,7 @@ php composer.phar update
 );
 ```
 
-* Done! Use codeception normally to generate at run tests
+* Done! Use codeception normally to generate and run tests
 
 ### Important Notes
 
